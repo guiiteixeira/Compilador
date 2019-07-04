@@ -1,0 +1,83 @@
+INSTÂNCIA TESTE 1
+
+
+/*Este programa soma os numeros naturais de 1 a n*/
+
+int add (int a, int b{
+	return a + b;
+}
+
+struct Aluno{
+	int matricula;
+	char nome[20;
+}
+
+int soma(int n{
+	int soma;
+	soma = 0
+	int i = 1;
+	add(1,2);
+	if(i <= n){
+		soma = soma + i;
+		i = i + 1;
+	
+	return soma
+}
+
+/*comentario
+comentario int x = 
+comentario
+*/
+
+
+Errors:
+Syntax Error -> Esperado ')' - encontrado '<ABRE_CHAVE, '{', 3, 22>'
+Syntax Error -> Esperado '{' - encontrado '<RESERVADO, 'return', 4, 2>'
+Syntax Error -> Esperado ']' - encontrado '<PONTO_VIRGULA, ';', 9, 14>'
+Syntax Error -> Esperado ';' - encontrado '<FECHA_CHAVE, '}', 10, 1>'
+ERRO FOI IGNORADO
+Syntax Error -> Esperado ')' - encontrado '<ABRE_CHAVE, '{', 12, 15>'
+Syntax Error -> Esperado '{' - encontrado '<RESERVADO, 'int', 13, 2>'
+Syntax Error -> Esperado ';' - encontrado '<RESERVADO, 'int', 15, 2>'
+ERRO FOI IGNORADO
+Syntax Error -> Esperado ';' - encontrado '<FECHA_CHAVE, '}', 22, 1>'
+ERRO FOI IGNORADO
+Syntax Error -> Esperado '}' - encontrado 'nada'
+
+
+INSTÂNCIA TESTE 2
+
+/*Este programa soma os numeros naturais de 1 a n*/
+
+int add (int a, int b){
+	return a + b;
+}
+
+struct Aluno{
+	int matricula;
+	char nome[20];
+}
+
+int soma(int n){
+	int soma;
+	soma = 0
+	int i = 1;
+	add(1,2);
+	if(i <= n){
+		soma = soma + i;
+		i = i + 1;
+	
+	return soma;
+}
+
+/*comentario
+comentario int x = 
+comentario
+*/
+
+Errors:
+Syntax Error -> Esperado ';' - encontrado '<RESERVADO, 'int', 15, 2>'
+ERRO FOI IGNORADO
+Syntax Error -> Esperado '}' - encontrado 'nada'
+
+

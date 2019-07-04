@@ -1,0 +1,557 @@
+programa
+Filhos de programa:
+declaracao_lista -- 
+Filhos de declaracao_lista:
+declaracao -- declaracao_lista' -- 
+Filhos de declaracao:
+tipo_especificador -- <ID, 0, 3, 5> -- declaracao' -- 
+Filhos de declaracao_lista':
+declaracao -- declaracao_lista' -- 
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 3, 1> -- 
+Filhos de <ID, 0, 3, 5>:
+
+Filhos de declaracao':
+fun_declaracao -- 
+Filhos de declaracao:
+estrutura -- 
+Filhos de declaracao_lista':
+declaracao -- declaracao_lista' -- 
+Filhos de <RESERVADO, 'int', 3, 1>:
+
+Filhos de fun_declaracao:
+<ABRE_PARENTESE, '(', 3, 9> -- params -- <FECHA_PARENTESE, ')', 3, 22> -- composto_decl -- 
+Filhos de estrutura:
+<RESERVADO, 'struct', 7, 1> -- <ID, 3, 7, 8> -- <ABRE_CHAVE, '{', 7, 13> -- atributos_declaracao -- <FECHA_CHAVE, '}', 10, 1> -- 
+Filhos de declaracao:
+tipo_especificador -- <ID, 7, 12, 5> -- declaracao' -- 
+Filhos de declaracao_lista':
+
+Filhos de <ABRE_PARENTESE, '(', 3, 9>:
+
+Filhos de params:
+param_lista -- 
+Filhos de <FECHA_PARENTESE, ')', 3, 22>:
+
+Filhos de composto_decl:
+<ABRE_CHAVE, '{', 3, 23> -- instrucoes -- <FECHA_CHAVE, '}', 5, 1> -- 
+Filhos de <RESERVADO, 'struct', 7, 1>:
+
+Filhos de <ID, 3, 7, 8>:
+
+Filhos de <ABRE_CHAVE, '{', 7, 13>:
+
+Filhos de atributos_declaracao:
+tipo_especificador -- <ID, 4, 8, 6> -- var_declaracao -- atributos_declaracao' -- 
+Filhos de <FECHA_CHAVE, '}', 10, 1>:
+
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 12, 1> -- 
+Filhos de <ID, 7, 12, 5>:
+
+Filhos de declaracao':
+fun_declaracao -- 
+Filhos de param_lista:
+param -- param_lista -- 
+Filhos de <ABRE_CHAVE, '{', 3, 23>:
+
+Filhos de instrucoes:
+comando_lista -- instrucoes -- 
+Filhos de <FECHA_CHAVE, '}', 5, 1>:
+
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 8, 2> -- 
+Filhos de <ID, 4, 8, 6>:
+
+Filhos de var_declaracao:
+var_declaracao' -- 
+Filhos de atributos_declaracao':
+tipo_especificador -- <ID, 5, 9, 7> -- var_declaracao -- atributos_declaracao' -- 
+Filhos de <RESERVADO, 'int', 12, 1>:
+
+Filhos de fun_declaracao:
+<ABRE_PARENTESE, '(', 12, 9> -- params -- <FECHA_PARENTESE, ')', 12, 15> -- composto_decl -- 
+Filhos de param:
+tipo_especificador -- <ID, 1, 3, 14> -- param' -- 
+Filhos de param_lista:
+<VIRGULA, ',', 3, 15> -- param -- param_lista -- 
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de instrucoes:
+
+Filhos de <RESERVADO, 'int', 8, 2>:
+
+Filhos de var_declaracao':
+<PONTO_VIRGULA, ';', 8, 15> -- 
+Filhos de tipo_especificador:
+<RESERVADO, 'char', 9, 2> -- 
+Filhos de <ID, 5, 9, 7>:
+
+Filhos de var_declaracao:
+var_declaracao' -- 
+Filhos de atributos_declaracao':
+
+Filhos de <ABRE_PARENTESE, '(', 12, 9>:
+
+Filhos de params:
+param_lista -- 
+Filhos de <FECHA_PARENTESE, ')', 12, 15>:
+
+Filhos de composto_decl:
+<ABRE_CHAVE, '{', 12, 16> -- instrucoes -- 
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 3, 10> -- 
+Filhos de <ID, 1, 3, 14>:
+
+Filhos de param':
+
+Filhos de <VIRGULA, ',', 3, 15>:
+
+Filhos de param:
+tipo_especificador -- <ID, 2, 3, 21> -- param' -- 
+Filhos de param_lista:
+
+Filhos de comando:
+retorno_decl -- 
+Filhos de comando_lista:
+
+Filhos de <PONTO_VIRGULA, ';', 8, 15>:
+
+Filhos de <RESERVADO, 'char', 9, 2>:
+
+Filhos de var_declaracao':
+<ABRE_COLCHETE, '[', 9, 11> -- <CONSTANTE NUMERICA, 6, 9, 13> -- <FECHA_COLCHETE, ']', 9, 14> -- var_declaracao' -- 
+Filhos de param_lista:
+param -- param_lista -- 
+Filhos de <ABRE_CHAVE, '{', 12, 16>:
+
+Filhos de instrucoes:
+local_declaracoes -- instrucoes -- 
+Filhos de <RESERVADO, 'int', 3, 10>:
+
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 3, 17> -- 
+Filhos de <ID, 2, 3, 21>:
+
+Filhos de param':
+
+Filhos de retorno_decl:
+<RESERVADO, 'return', 4, 2> -- retorno_decl' -- <PONTO_VIRGULA, ';', 4, 14> -- 
+Filhos de <ABRE_COLCHETE, '[', 9, 11>:
+
+Filhos de <CONSTANTE NUMERICA, 6, 9, 13>:
+
+Filhos de <FECHA_COLCHETE, ']', 9, 14>:
+
+Filhos de var_declaracao':
+<PONTO_VIRGULA, ';', 9, 15> -- 
+Filhos de param:
+tipo_especificador -- <ID, 8, 12, 14> -- param' -- 
+Filhos de param_lista:
+
+Filhos de local_declaracoes:
+tipo_especificador -- <ID, 7, 13, 6> -- var_declaracao -- local_declaracoes -- 
+Filhos de instrucoes:
+comando_lista -- instrucoes -- 
+Filhos de <RESERVADO, 'int', 3, 17>:
+
+Filhos de <RESERVADO, 'return', 4, 2>:
+
+Filhos de retorno_decl':
+expressao -- 
+Filhos de <PONTO_VIRGULA, ';', 4, 14>:
+
+Filhos de <PONTO_VIRGULA, ';', 9, 15>:
+
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 12, 10> -- 
+Filhos de <ID, 8, 12, 14>:
+
+Filhos de param':
+
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 13, 2> -- 
+Filhos de <ID, 7, 13, 6>:
+
+Filhos de var_declaracao:
+var_declaracao' -- 
+Filhos de local_declaracoes:
+
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de instrucoes:
+local_declaracoes -- instrucoes -- 
+Filhos de expressao:
+var -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de <RESERVADO, 'int', 12, 10>:
+
+Filhos de <RESERVADO, 'int', 13, 2>:
+
+Filhos de var_declaracao':
+<PONTO_VIRGULA, ';', 13, 10> -- 
+Filhos de comando:
+expressao_decl -- 
+Filhos de comando_lista:
+
+Filhos de local_declaracoes:
+tipo_especificador -- <ID, 10, 15, 6> -- var_declaracao -- local_declaracoes -- 
+Filhos de instrucoes:
+comando_lista -- instrucoes -- 
+Filhos de var:
+<ID, 1, 4, 9> -- var' -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+soma -- termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de <PONTO_VIRGULA, ';', 13, 10>:
+
+Filhos de expressao_decl:
+expressao -- ; -- 
+Filhos de tipo_especificador:
+<RESERVADO, 'int', 15, 2> -- 
+Filhos de <ID, 10, 15, 6>:
+
+Filhos de var_declaracao:
+var_declaracao' -- 
+Filhos de local_declaracoes:
+
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de instrucoes:
+
+Filhos de <ID, 1, 4, 9>:
+
+Filhos de var':
+
+Filhos de soma:
+<SOMA, '+', 4, 12> -- 
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de expressao:
+var -- <ATRIBUICAO, '=', 14, 8> -- expressao -- 
+Filhos de ;:
+
+Filhos de <RESERVADO, 'int', 15, 2>:
+
+Filhos de var_declaracao':
+<ATRIBUICAO, '=', 15, 9> -- expressao -- var_declaracao' -- 
+Filhos de comando:
+expressao_decl -- 
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de <SOMA, '+', 4, 12>:
+
+Filhos de fator:
+var -- 
+Filhos de termo':
+
+Filhos de var:
+<ID, 7, 14, 2> -- var' -- 
+Filhos de <ATRIBUICAO, '=', 14, 8>:
+
+Filhos de expressao:
+expressao_simples -- 
+Filhos de <ATRIBUICAO, '=', 15, 9>:
+
+Filhos de expressao:
+expressao_simples -- 
+Filhos de var_declaracao':
+<PONTO_VIRGULA, ';', 15, 11> -- 
+Filhos de expressao_decl:
+expressao -- <PONTO_VIRGULA, ';', 16, 10> -- 
+Filhos de comando:
+selecao_decl -- 
+Filhos de comando_lista:
+
+Filhos de var:
+<ID, 2, 4, 13> -- var' -- 
+Filhos de <ID, 7, 14, 2>:
+
+Filhos de var':
+
+Filhos de expressao_simples:
+expressao_soma -- expressao_simples' -- 
+Filhos de expressao_simples:
+expressao_soma -- expressao_simples' -- 
+Filhos de <PONTO_VIRGULA, ';', 15, 11>:
+
+Filhos de expressao:
+ativacao -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de <PONTO_VIRGULA, ';', 16, 10>:
+
+Filhos de selecao_decl:
+<RESERVADO, 'if', 17, 2> -- <ABRE_PARENTESE, '(', 17, 4> -- expressao -- <FECHA_PARENTESE, ')', 17, 11> -- comando -- else_decl -- 
+Filhos de <ID, 2, 4, 13>:
+
+Filhos de var':
+
+Filhos de expressao_soma:
+termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de expressao_soma:
+termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de ativacao:
+<ID, 0, 16, 2> -- <ABRE_PARENTESE, '(', 16, 5> -- args -- <FECHA_PARENTESE, ')', 16, 9> -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+
+Filhos de expressao_simples':
+
+Filhos de <RESERVADO, 'if', 17, 2>:
+
+Filhos de <ABRE_PARENTESE, '(', 17, 4>:
+
+Filhos de expressao:
+var -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de <FECHA_PARENTESE, ')', 17, 11>:
+
+Filhos de comando:
+composto_decl -- 
+Filhos de else_decl:
+
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de <ID, 0, 16, 2>:
+
+Filhos de <ABRE_PARENTESE, '(', 16, 5>:
+
+Filhos de args:
+arg_lista -- 
+Filhos de <FECHA_PARENTESE, ')', 16, 9>:
+
+Filhos de var:
+<ID, 10, 17, 5> -- var' -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+
+Filhos de expressao_simples':
+relacional -- expressao_soma -- 
+Filhos de composto_decl:
+<ABRE_CHAVE, '{', 17, 12> -- instrucoes -- <FECHA_CHAVE, '}', 22, 1> -- 
+Filhos de fator:
+<CONSTANTE NUMERICA, 9, 14, 9> -- 
+Filhos de termo':
+
+Filhos de fator:
+<CONSTANTE NUMERICA, 11, 15, 10> -- 
+Filhos de termo':
+
+Filhos de arg_lista:
+expressao -- arg_lista -- 
+Filhos de <ID, 10, 17, 5>:
+
+Filhos de var':
+
+Filhos de relacional:
+<MENOR_IGUAL, '<=', 17, 8> -- 
+Filhos de expressao_soma:
+termo -- expressao_soma' -- 
+Filhos de <ABRE_CHAVE, '{', 17, 12>:
+
+Filhos de instrucoes:
+comando_lista -- instrucoes -- 
+Filhos de <FECHA_CHAVE, '}', 22, 1>:
+
+Filhos de <CONSTANTE NUMERICA, 9, 14, 9>:
+
+Filhos de <CONSTANTE NUMERICA, 11, 15, 10>:
+
+Filhos de expressao:
+expressao_simples -- 
+Filhos de arg_lista:
+<VIRGULA, ',', 16, 7> -- expressao -- arg_lista -- 
+Filhos de <MENOR_IGUAL, '<=', 17, 8>:
+
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de instrucoes:
+
+Filhos de expressao_simples:
+expressao_soma -- expressao_simples' -- 
+Filhos de <VIRGULA, ',', 16, 7>:
+
+Filhos de expressao:
+expressao_simples -- 
+Filhos de arg_lista:
+
+Filhos de fator:
+var -- 
+Filhos de termo':
+
+Filhos de comando:
+expressao_decl -- 
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de expressao_soma:
+termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de expressao_simples:
+expressao_soma -- expressao_simples' -- 
+Filhos de var:
+<ID, 8, 17, 10> -- var' -- 
+Filhos de expressao_decl:
+expressao -- <PONTO_VIRGULA, ';', 18, 18> -- 
+Filhos de comando:
+expressao_decl -- 
+Filhos de comando_lista:
+comando -- comando_lista -- 
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de expressao_soma:
+termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de <ID, 8, 17, 10>:
+
+Filhos de var':
+
+Filhos de expressao:
+var -- <ATRIBUICAO, '=', 18, 9> -- expressao -- 
+Filhos de <PONTO_VIRGULA, ';', 18, 18>:
+
+Filhos de expressao_decl:
+expressao -- <PONTO_VIRGULA, ';', 19, 12> -- 
+Filhos de comando:
+retorno_decl -- 
+Filhos de comando_lista:
+
+Filhos de fator:
+<CONSTANTE NUMERICA, 11, 16, 6> -- 
+Filhos de termo':
+
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de var:
+<ID, 7, 18, 3> -- var' -- 
+Filhos de <ATRIBUICAO, '=', 18, 9>:
+
+Filhos de expressao:
+var -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de expressao:
+var -- <ATRIBUICAO, '=', 19, 6> -- expressao -- 
+Filhos de <PONTO_VIRGULA, ';', 19, 12>:
+
+Filhos de retorno_decl:
+<RESERVADO, 'return', 21, 2> -- retorno_decl' -- <PONTO_VIRGULA, ';', 21, 13> -- 
+Filhos de <CONSTANTE NUMERICA, 11, 16, 6>:
+
+Filhos de fator:
+<CONSTANTE NUMERICA, 12, 16, 8> -- 
+Filhos de termo':
+
+Filhos de <ID, 7, 18, 3>:
+
+Filhos de var':
+
+Filhos de var:
+<ID, 7, 18, 10> -- var' -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+soma -- termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de var:
+<ID, 10, 19, 3> -- var' -- 
+Filhos de <ATRIBUICAO, '=', 19, 6>:
+
+Filhos de expressao:
+var -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de <RESERVADO, 'return', 21, 2>:
+
+Filhos de retorno_decl':
+expressao -- 
+Filhos de <PONTO_VIRGULA, ';', 21, 13>:
+
+Filhos de <CONSTANTE NUMERICA, 12, 16, 8>:
+
+Filhos de <ID, 7, 18, 10>:
+
+Filhos de var':
+
+Filhos de soma:
+<SOMA, '+', 18, 16> -- 
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de <ID, 10, 19, 3>:
+
+Filhos de var':
+
+Filhos de var:
+<ID, 10, 19, 7> -- var' -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+soma -- termo -- expressao_soma' -- 
+Filhos de expressao_simples':
+
+Filhos de expressao:
+var -- termo' -- expressao_soma' -- expressao_simples' -- 
+Filhos de <SOMA, '+', 18, 16>:
+
+Filhos de fator:
+var -- 
+Filhos de termo':
+
+Filhos de <ID, 10, 19, 7>:
+
+Filhos de var':
+
+Filhos de soma:
+<SOMA, '+', 19, 10> -- 
+Filhos de termo:
+fator -- termo' -- 
+Filhos de expressao_soma':
+
+Filhos de var:
+<ID, 7, 21, 9> -- var' -- 
+Filhos de termo':
+
+Filhos de expressao_soma':
+
+Filhos de expressao_simples':
+
+Filhos de var:
+<ID, 10, 18, 17> -- var' -- 
+Filhos de <SOMA, '+', 19, 10>:
+
+Filhos de fator:
+<CONSTANTE NUMERICA, 11, 19, 11> -- 
+Filhos de termo':
+
+Filhos de <ID, 7, 21, 9>:
+
+Filhos de var':
+
+Filhos de <ID, 10, 18, 17>:
+
+Filhos de var':
+
+Filhos de <CONSTANTE NUMERICA, 11, 19, 11>:
+

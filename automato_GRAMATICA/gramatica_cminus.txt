@@ -1,0 +1,44 @@
+<programa> ::= <declaracao-lista>
+<declaracao-lista> ::= <declaracao> <declaracao-lista'> 
+<declaracao-lista'> ::= <declaracao><declaracao-lista'> | <vazio>
+<declaracao> ::= <tipo-especificador> <ident> <declaracao'> | <estrutura>
+<declaracao'> ::= <var-declaracao> | <fun-declaracao>
+<var-declaracao> ::= <var-declaracao'>
+<var-declaracao'> ::= <abre-colchete> <num-int> <fecha-colchete> <var-declaracao'> | = <expressao><var-declaracao'> |;
+<tipo-especificador> ::= int | float | char | void
+<estrutura> ::= struct <ident> <abre-chave> <atributos-declaracao> <fecha-chave>
+<atributos-declaracao> ::= <tipo-especificador> <ident> <var-declaracao> <atributos-declaracao'> | <estrutura><atributos-declaracao'>
+<atributos-declaracao'> ::= <tipo-especificador> <ident> <var-declaracao> <atributos-declaracao'> | <estrutura><atributos-declaracao'> | <vazio> 
+<fun-declaracao> ::= ( <params> ) <composto-decl>
+<params> ::= <param-lista> | void
+<param-lista> ::= <param><param-lista> | , <param><param-lista> | <vazio>
+<param> ::= <tipo-especificador> <ident> <param'>
+<param'> ::= <abre-colchete> <fecha-colchete><param'> | <vazio>
+<composto-decl> ::= <abre-chave> <instrucoes> <fecha-chave>
+<instrucoes> ::= <local-declaracoes><instrucoes> | <comando-lista><instrucoes> | <vazio>
+<local-declaracoes> ::= <tipo-especificador> <ident><var-declaracao><local-declaracoes> | <estrutura><local-declaracoes> | <vazio>
+<comando-lista> ::=  <comando> <comando-lista> | <vazio>
+<comando> ::= <expressao-decl> | <composto-decl> | <selecao-decl> | <iteracao-decl> | <retorno-decl>
+<expressao-decl> ::= <expressao> ; | ;
+<selecao-decl> ::= if ( <expressao> ) <comando> <else-decl>
+<else-decl> ::= else <comando> | <vazio>
+<iteracao-decl> ::= while ( <expressao> ) <comando>
+<retorno-decl> ::= return <retorno-decl'> ;
+<retorno-decl'> ::= <expressao>
+<expressao> ::= <var> = <expressao> | <expressao-simples>
+<var> ::= <ident> <var'> 
+<var'> ::= <abre-colchete> <expressao> <fecha-colchete> <var'> | <vazio>
+<expressao-simples> ::= <expressao-soma> <expressao-simples'>
+<expressao-simples'> ::= <relacional> <expressao-soma> | <vazio>
+<relacional> ::= <= | < | > | >= | == | !=
+<expressao-soma> ::= <termo><expressao-soma'>
+<expressao-soma'> ::= <soma> <termo><expressao-soma'> | <vazio>
+<soma> ::= + | -
+<termo> ::= <fator> <termo'>
+<termo'> ::= <mult> <fator><termo'> | <vazio>
+<mult> ::= * | /
+<fator> ::= ( <expressao> ) | <var> | <ativacao> | <num> | <num-int>
+<ativacao> ::= <ident> ( <args> )
+<args> ::= <arg-lista>
+<arg-lista> ::= <expressao><arg-lista> |  , <expressao><arg-lista> | <vazio>
+
